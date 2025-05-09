@@ -1,0 +1,25 @@
+       IDENTIFICATION DIVISION.
+        PROGRAM-ID. VOWCONS.
+        DATA DIVISION.
+        WORKING-STORAGE SECTION.
+        01 WS-INP1-VAL PIC X(10) VALUE SPACES.
+        01 WS-LEN PIC 99 VALUE 10.
+        01 WS-CNT PIC 99 VALUE ZEROS.
+        01 WS-VOW PIC 99 VALUE 0.
+        01 WS-CNS PIC 99 VALUE 0.
+        PROCEDURE DIVISION.
+            DISPLAY "START".
+            ACCEPT WS-INP1-VAL.
+            MOVE 1 TO WS-CNT.
+            PERFORM VARYING WS-CNT FROM 1 BY 1 UNTIL WS-CNT > WS-LEN
+                 IF WS-INP1-VAL(WS-CNT:1) = 'A' OR 'E' OR 
+                               'I' OR 'O' OR 'U'
+                    ADD 1 TO WS-VOW
+                 ELSE 
+                    IF WS-INP1-VAL(WS-CNT:1) NOT EQUAL SPACES
+                    ADD 1 TO WS-CNS
+            END-PERFORM.
+            DISPLAY "WORD:" WS-INP1-VAL
+            DISPLAY "VOWEL CNT:" WS-VOW
+            DISPLAY "CONSONANTS:" WS-CNS 
+            STOP RUN.
