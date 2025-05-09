@@ -1,0 +1,15 @@
+       IDENTIFICATION DIVISION.
+        PROGRAM-ID. sum.
+        DATA DIVISION.
+        WORKING-STORAGE SECTION.
+        01 WS-INP1-VAL PIC 9 VALUE 0.
+        01 WS-INP2-VAL PIC 9 VALUE 0.
+        01 WS-SUM PIC 99 VALUE 0.
+        
+        PROCEDURE DIVISION.
+            DISPLAY "Hello World".
+            ACCEPT WS-INP1-VAL.
+            ACCEPT WS-INP2-VAL.
+            COMPUTE WS-SUM = WS-INP1-VAL + WS-INP2-VAL
+            DISPLAY "SUM=" WS-SUM.
+            STOP RUN.
