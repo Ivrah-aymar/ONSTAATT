@@ -1,0 +1,21 @@
+       IDENTIFICATION DIVISION.
+        PROGRAM-ID. fact.
+        DATA DIVISION.
+        WORKING-STORAGE SECTION.
+        01 WS-INP1-VAL PIC 99 VALUE 0.
+        01 WS-FACT PIC 999 VALUE 1.
+        01 WS-CNT PIC 99 VALUE 0.
+        PROCEDURE DIVISION.
+            DISPLAY "Hello World".
+            ACCEPT WS-INP1-VAL.
+            MOVE WS-INP1-VAL TO WS-CNT
+            
+            PERFORM UNTIL WS-CNT IS EQUAL 1
+                    DISPLAY "WS-CNT:" WS-CNT
+                    COMPUTE  WS-FACT = WS-FACT * WS-CNT 
+                    COMPUTE WS-CNT = WS-CNT - 1
+            END-PERFORM.
+            
+            DISPLAY "FACT:" WS-FACT
+
+            STOP RUN.
