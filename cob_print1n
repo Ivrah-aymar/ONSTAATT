@@ -1,0 +1,17 @@
+       IDENTIFICATION DIVISION.
+        PROGRAM-ID. PRINTN.
+        DATA DIVISION.
+        WORKING-STORAGE SECTION.
+        01 WS-INP1-VAL PIC 99 VALUE 0.
+        01 WS-N PIC 999 VALUE 1.
+        01 WS-CNT PIC 99 VALUE 0.
+        PROCEDURE DIVISION.
+            DISPLAY "START".
+            ACCEPT WS-INP1-VAL.
+            MOVE 1 TO WS-CNT
+            
+            PERFORM UNTIL WS-CNT IS EQUAL WS-INP1-VAL + 1
+                    DISPLAY WS-CNT
+                    COMPUTE WS-CNT = WS-CNT + 1
+            END-PERFORM.
+            STOP RUN.
