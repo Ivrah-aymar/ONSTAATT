@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Hello, World!"
+#set -e
+# Simulate a failure
+ls /nonexistent_directory
+
+echo "Script continues..."
+
+#without set -e executes with ret code 0 only shows directory not found and still prints Script continues...
+#with set -e executes with rc 2 and doesnt print Script continues...
