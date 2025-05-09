@@ -1,0 +1,19 @@
+       IDENTIFICATION DIVISION.
+        PROGRAM-ID. sum.
+        DATA DIVISION.
+        WORKING-STORAGE SECTION.
+        01 WS-INP1-VAL PIC 99 VALUE 0.
+        01 WS-QUO PIC 99 VALUE 0.
+        01 WS-REM PIC 99 VALUE 0.
+      * WS-INP2-VAL PIC 9 VALUE 0.
+        
+        PROCEDURE DIVISION.
+            DISPLAY "Hello World".
+            ACCEPT WS-INP1-VAL.
+            DIVIDE WS-INP1-VAL BY 2 GIVING WS-QUO REMAINDER WS-REM
+            
+            IF (WS-REM EQUALS ZEROS)
+               DISPLAY "NUM IS EVEN"
+            ELSE
+               DISPLAY "NUM IS ODD".
+            STOP RUN.
