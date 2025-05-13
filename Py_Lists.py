@@ -11,3 +11,6 @@ animelist.append('Spy Family')
 print(animelist)
 print(mangalist * 2)
 print(len(animelist))
+num_list=[3,4,6,71,29]
+print(max(num_list))
+print(min(num_list))
