@@ -26,3 +26,21 @@ for i in range(x,0,-1):
 1 1 1
 '''   
 
+   for i in range (p,0,-1):
+        for j in range(q,0,-1):
+            print(str(i),end=" ")
+    print()
+
+print("main")
+x=3
+y=x
+for i in range(x,0,-1):
+    f=fun1(i,y)
+    y=y-1
+    
+'''
+main
+3 3 3 2 2 2 1 1 1 
+2 2 1 1 
+1 
+'''
