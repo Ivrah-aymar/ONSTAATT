@@ -43,3 +43,18 @@ for i in range(0,5,2):
 '''
 for i in range(0,5,-1):
     print(i)
+
+'''
+IC
+One Piece
+Windbreaker
+ORV
+0
+1
+2
+3
+4
+0
+2
+4
+'''
