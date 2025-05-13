@@ -12,3 +12,9 @@ fulllist=manhwalist + mangalist
 #print(fulllist + "HB")
 #TypeError: can only concatenate tuple (not "str") to tuple
 print(fulllist)
+'''
+WB
+WBWB
+('ORV', 'WB', 'Lookism', 'Haikyu', 'One Piece', 'Berserk')
+('ORV', 'WB', 'Lookism', 'Haikyu', 'One Piece', 'Berserk')
+'''
