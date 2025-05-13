@@ -37,3 +37,17 @@ Its the beginning
 Its the beginning
 120
 '''
+    
+def apb(a,b):
+    return a+b
+def amb(a,b):
+    return a-b
+def a2mb2(x,y):
+    res=x * y
+    return res
+print("Its the a2mb2")
+print(a2mb2(apb(4,2),amb(4,2)))
+'''
+Its the a2mb2
+12
+'''
