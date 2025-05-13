@@ -29,4 +29,23 @@ print(str2*4)
 #index
 print(str1[0:3])
 #prints Nam
+# Placeholders in Strings
 
+#He="Luffy"
+#age=7
+sent1="%s was just %d years old"
+print(sent1 % ("Luffy",7))
+print("%s was just %d years old"  % ("Luffy",7) )
+He="Luffy"
+age=7
+print(f"{He} was {age} years old")
+#fstrings
+x=5
+y=6
+print(f"sum of x and y = {x + y}")
+#result
+'''Luffy was just 7 years old
+Luffy was just 7 years old
+Luffy was 7 years old
+sum of x and y = 11
+'''
