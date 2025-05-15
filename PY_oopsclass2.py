@@ -54,3 +54,43 @@ s1=Stu_grade("Vivi",99,98,94,94),
 if s1.has_passed
 #for student in students:
 #    print(f"{student.Name}: {Stu_grade.percentage():.2f}% - {'Pass' if Stu_grade.has_passed() else 'Fail'}")
+####3
+#class 
+#input in main -- Student score
+class Student:
+    def __init__(self,Name,m1,m2,m3,m4):
+        self.Name=Name
+        self.m1=m1
+        self.m2=m2
+        self.m3=m3
+        self.m4=m4
+    def Name(self):
+        return Name
+    def m1(self):
+        return m1
+    def m2(self):
+        return m2
+    def m3(self):
+        return m3
+    def m4(self):
+        return m4
+    def total(m1,m2,m3,m4):
+        total1=m1+m2+m3+m4
+        return total1
+        
+
+#main
+print("Its the start")
+Student1=Student("Vivi",90,60,80,79)
+print(Student1.Name)
+print(Student1.m1)
+print(Student1.m2)
+print(Student1.m3)
+print(Student1.m4)
+x1=Student1.m1
+x2=Student1.m2
+x3=Student1.m3
+x4=Student1.m4
+print(Student.total(x1,x2,x3,x4))
+#3 -- reduce and table
+
