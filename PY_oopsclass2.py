@@ -185,7 +185,16 @@ for Student in Students:
 #    print(f"{Student1.Name}")
 #,x2,'Pass' if Student.result(x2) == 1 else 'Fail')
     
-
+'''
+Its the start
+3
+Sabo
+[90, 60, 80, 79]
+Luffy
+[2, 10, 10, 3]
+Zoro
+[10, 2, 1, 21]
+'''
 
 
 
