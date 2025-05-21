@@ -1,1 +1,19 @@
 #Maximum Subarray Sum - Kadane's Algorithm
+The idea of Kadane's algorithm is to traverse over the array from left to right 
+and for each element, find the maximum sum among all subarrays ending at that element. 
+The result will be the maximum of all these values. 
+This means that maxEnding at index i = max(maxEnding at index (i - 1) + arr[i], arr[i]) and the maximum value of maxEnding at any index will be our answer.
+Choice 1: Extend the maximum sum subarray ending at the previous element by adding the current element to it. If the maximum subarray sum ending at the previous index is positive, then it is always better to extend the subarray.
+Choice 2: Start a new subarray starting from the current element. If the maximum subarray sum ending at the previous index is negative, it is always better to start a new subarray from the current element.
+{2, 3, -8, 7, -1, 2, 3}
+2+3 5, -3, --- negative -- so starts at 7
+7+(-1) 6, 8, 11 -- largest sum 11
+ex 2: {-2, -4}
+ex 3: {5, 4, 1, 7, 8}
+5+4 9, 10, 17, 25 -- 
+#PY_kmaxsub.py
+
+
+
+
+
