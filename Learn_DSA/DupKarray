@@ -1,0 +1,8 @@
+#integer array arr[], integer k. 
+#Check i and j where arr[i]==arr[j] and |i-j|< or = k
+ex:[1,2,3,4,5,6,2,3]  k=3
+2 and 3 repeated but indices dif more than k
+2:[1,2,3,4,2,3] k=5
+3:[1,2,3,4] , k=3 -- no duplicates
+1st approach --
+for a[i] element range len(arr) -- a[j] element match range i, -- 
