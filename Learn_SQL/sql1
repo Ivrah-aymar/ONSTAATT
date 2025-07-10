@@ -1,0 +1,4 @@
+SELECT Price, COUNT(Price) AS PriceN
+FROM Products
+GROUP BY Price HAVING COUNT(Price) > 1
+ ;
