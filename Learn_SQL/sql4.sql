@@ -1,4 +1,4 @@
-/* to get shortest and longest city name*/
+/* to get shortest and longest city name --  MYSQL */
 SELECT DISTINCT
 FIRST_VALUE(CITY) OVER (ORDER BY LENGTH(CITY) ASC, CITY ASC),
 FIRST_VALUE(LENGTH(CITY)) OVER (ORDER BY LENGTH(CITY) ASC) AS SHORTVAL
